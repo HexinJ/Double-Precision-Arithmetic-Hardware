@@ -149,6 +149,9 @@
       <a name="output" val="true"/>
       <a name="width" val="16"/>
     </comp>
+    <comp lib="8" loc="(900,289)" name="Text">
+      <a name="text" val="Only used when there is a dp add/sub"/>
+    </comp>
     <comp loc="(620,120)" name="ALSU_body"/>
     <wire from="(190,80)" to="(400,80)"/>
     <wire from="(200,110)" to="(220,110)"/>
@@ -900,6 +903,15 @@
     </comp>
     <comp lib="3" loc="(920,770)" name="Adder">
       <a name="width" val="32"/>
+    </comp>
+    <comp lib="8" loc="(1419,272)" name="Text">
+      <a name="text" val="Multiplexers determine if we use the single or double precision results"/>
+    </comp>
+    <comp lib="8" loc="(241,99)" name="Text">
+      <a name="text" val="Single precision circuit kept the same"/>
+    </comp>
+    <comp lib="8" loc="(427,1125)" name="Text">
+      <a name="text" val="Double precision value calculated but only used if it's a DP operation"/>
     </comp>
     <comp loc="(1010,510)" name="overflow_detection"/>
     <comp loc="(1340,1040)" name="overflow_detection_32"/>
@@ -2630,6 +2642,9 @@
     <comp lib="3" loc="(110,870)" name="Comparator">
       <a name="width" val="16"/>
     </comp>
+    <comp lib="8" loc="(1199,62)" name="Text">
+      <a name="text" val="Sending the lower register value to 2 in the multiplexer makes it work for the DP opcodes"/>
+    </comp>
     <comp lib="8" loc="(1481,701)" name="Text">
       <a name="text" val="each instruction has their respective flag_in and flag_out "/>
     </comp>
@@ -2650,6 +2665,9 @@
     </comp>
     <comp lib="8" loc="(1592,371)" name="Text">
       <a name="text" val="(but for now just output same flags, will change in memory circuit)"/>
+    </comp>
+    <comp lib="8" loc="(659,550)" name="Text">
+      <a name="text" val="We put both single and double in the same module"/>
     </comp>
     <comp loc="(850,120)" name="shifts"/>
     <comp loc="(850,270)" name="LU"/>
